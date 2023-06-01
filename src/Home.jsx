@@ -1,12 +1,20 @@
 import React from "react";
-import Search from "./Search";
-import Movies from "./Movies";
+import HeroSection from "./components/HeroSection";
+import Trusted from "./components/Trusted";
+import Services from "./components/Services";
+import FeatureProduct from "./components/FeatureProduct";
 
 const Home = () => {
+  const data = {
+    name: "Developer Store",
+  };
+
   return (
     <>
-      <Search />
-      <Movies />
+      <HeroSection myData={data} />
+      <FeatureProduct />
+      <Services />
+      <Trusted />
     </>
   );
 };
